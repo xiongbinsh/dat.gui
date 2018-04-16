@@ -21,7 +21,12 @@ $ npm install --save dat.gui
 ```
 
 ```js
-const dat = require('dat.gui').default;
+// CommonJS:
+const dat = require('dat.gui');
+
+// ES6:
+import dat from 'dat.gui';
+
 const gui = new dat.GUI();
 ```
 
@@ -30,8 +35,7 @@ const gui = new dat.GUI();
 ```
 ├── build - Compiled source code.
 ├── src - Source files.
-├── tests - Tests.
-└── webpack - Webpack config files.
+└── tests - Tests.
 ```
 
 ## Building your own dat.GUI
@@ -57,7 +61,7 @@ View the [Change Log](CHANGELOG.md)
 
 ## Thanks
 The following libraries / open-source projects were used in the development of dat.GUI:
- * [webpack](https://webpack.github.io/)
+ * [Rollup](https://rollupjs.org)
  * [Sass](http://sass-lang.com/)
- * [node.js](http://nodejs.org/)
+ * [Node.js](http://nodejs.org/)
  * [QUnit](https://github.com/jquery/qunit) / [jquery](http://jquery.com/)
